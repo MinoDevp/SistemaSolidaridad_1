@@ -7,16 +7,14 @@ import java.util.List;
 /*** Controlador para manejar la lógica de negocio de Médico * Actúa como intermediario entre la Vista y el Modelo * @author Usuario*/
 public class ControladorMedico {
     
-    private MedicoDAO medicoDAO;
-    
+    private MedicoDAO medicoDAO;  
     public ControladorMedico() {
         this.medicoDAO = new MedicoDAO();
     }  
     public ControladorMedico(MedicoDAO medicoDAO) {
     this.medicoDAO = medicoDAO;
 }
-
-    
+   
     /*** Registra un nuevo médico en el sistema* @param medico Objeto Medico a registrar* @return ResultadoOperacion con el resultado de la operación*/
     public ResultadoOperacion registrarMedico(Medico medico) {
         try {

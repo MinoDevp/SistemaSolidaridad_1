@@ -7,7 +7,6 @@ package ControladorTest;
 import Controlador.ControladorRegistroPaciente;
 import Modelo.PacienteDAO;
 import Vistas.regPacie;
-
 import javax.swing.*;
 import java.time.LocalDate;
 
@@ -60,10 +59,6 @@ public class ControladorRegistroPacienteTest {
         };
 
         // Controlador con mocks
-        ControladorRegistroPaciente controlador = new ControladorRegistroPaciente(vistaMock, daoMock);
-
-        // Ejecutar método de prueba
-     
-    
+        ControladorRegistroPaciente controlador = new ControladorRegistroPaciente(vistaMock, daoMock);   
 }
 
